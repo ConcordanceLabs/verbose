@@ -57,21 +57,17 @@ function waitForPurchase(vault: any, optionId: number, ms: number) {
 }
 
 async function handleOptionLifecycle(vault: any, optionId: number) {
-    console.log(`Option #${optionId} minted. Waiting up to 15 seconds for a buyer...`);
-
     try {
         // Race the event listener against a 15-second timer
         await waitForPurchase(vault, optionId, 15000);
-
-        console.log(`Buyer found for option #${optionId}! Proceeding to execution...`);
         await vault. (optionId);
 
     } catch (error: any) {
         if (error.message === "BUYER_TIMEOUT") {
             console.log(`Timeout reached! No buyer for option #${optionId}. Cleaning up and returning collateral...`);
             
-            // Smart contract call to refund the seller
-            await vault.cancelOrExpireUnboughtOption(optionId);
+            await vault.cancelOrExpireUnboughtOption(optionId);   // Smart contract call to refund the seller
+
             
             console.log(`Option #${optionId} cleaned up successfully.`);
         } else {
