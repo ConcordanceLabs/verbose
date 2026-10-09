@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: Concordance: Tacit Demo
 
 # import hextra as module
 module:
@@ -33,12 +33,10 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
       params:
         icon: github
     - name: Twitter
       weight: 6
-      url: "https://twitter.com/"
       params:
         icon: x-twitter
 
@@ -49,7 +47,7 @@ params:
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
     enable: false
