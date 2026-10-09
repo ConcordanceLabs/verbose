@@ -11,11 +11,7 @@ This is a demo of the theme's documentation layout.
 
 {{< tabs >}}
 {{< tab name="Tacit" >}}**With Tacit**: JavaScript Object Notation (JSON) .{{< /tab >}}
-  {{< tab name="Without Tacit" >}}**Without Tacit**: YAML is a human-readable data serialization language.{{< /tab >}}
-  
-
-{{< /tabs >}}
-
+  {{< tab name="Without Tacit" >}}**Without Tacit**: YAML is a human-readable data serialization language.
 
 ``` Typescript {filename="Tecit.ts", linenos=table}
 export const waitforBuyer = () => {
@@ -28,6 +24,10 @@ const buyer = waitforBuyer()
        .with('error', () => optionExpired());
 
 ```
+{{< /tab >}}
+
+{{< /tabs >}}
+
 
 ``` Typescript {filename="Without.ts", linenos=table}
 function timeout(ms: number) {
