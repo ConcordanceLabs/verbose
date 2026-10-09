@@ -24,7 +24,7 @@ const buyer = waitforBuyer()
 ```
 {{< /tab >}}
 
-  {{< tab name="Without Tacit" >}}**Without Tacit**: Manually configure listeners and constraints like timers. Try/catch verbosity makes understanding. 
+  {{< tab name="Without Tacit" >}}**Without Tacit**: The same single function. Manually configured your listeners and constraints like timers. Rejections, awaits and error handling with conditional statements inside try/catch verbosity makes application predictability harder. 
 
 
 
