@@ -3,14 +3,14 @@ title: Documentation
 next: first-page
 ---
 
-This is a demo of the theme's documentation layout.
+This is a demo.
 
 ## Building Applications
 
 
 
 {{< tabs >}}
-{{< tab name="Tacit" >}}**With Tacit**: 
+{{< tab name="Tacit" >}}**With Tacit**: Declarative code that handles errors and listeners.  
 ``` Typescript {filename="Tecit.ts", linenos=table}
 export const waitforBuyer = () => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
@@ -24,7 +24,7 @@ const buyer = waitforBuyer()
 ```
 {{< /tab >}}
 
-  {{< tab name="Without Tacit" >}}**Without Tacit**: YAML is a human-readable data serialization language.
+  {{< tab name="Without Tacit" >}}**Without Tacit**: Manually configure listeners and constraints like timers. Try/catch verbosity makes understanding. 
 
 
 
@@ -60,7 +60,7 @@ async function handleOptionLifecycle(vault: any, optionId: number) {
     try {
         // Race the event listener against a 15-second timer
         await waitForPurchase(vault, optionId, 15000);
-        await vault. (optionId);
+        await vault.(optionId);
 
     } catch (error: any) {
         if (error.message === "BUYER_TIMEOUT") {
