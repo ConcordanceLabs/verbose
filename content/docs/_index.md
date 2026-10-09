@@ -7,8 +7,10 @@ This is a demo of the theme's documentation layout.
 
 ## Hello, World!
 
-{{< cards >}}
 
+{{< cards cols = "1" >}}
+
+  {{< card 
 ``` go {filename="main.go"}
 package main
 
@@ -17,7 +19,10 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
-Python
+```
+>}}
+ {{< card
+``` Python
 def main():
     print("Hello, World!")
 
