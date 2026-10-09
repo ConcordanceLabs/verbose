@@ -14,10 +14,10 @@ export const waitforBuyer = () => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
 }
 
-const buyer = waitforBuyer(); 
-    match(buyer)
-      .with('success', () => exerciseOption() )
-      .with('error', () => optionExpired())
+const buyer = waitforBuyer()
+    .match(buyer)
+       .with('success', () => exerciseOption() )
+       .with('error', () => optionExpired());
 
 ```
 
