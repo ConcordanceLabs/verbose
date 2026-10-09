@@ -7,6 +7,8 @@ This is a demo of the theme's documentation layout.
 
 ## Hello, World!
 
+{{< cards >}}
+
 ```go {filename="main.go"}
 package main
 
@@ -16,3 +18,4 @@ func main() {
     fmt.Println("Hello, World!")
 }
 ```
+{{< /cards >}}
