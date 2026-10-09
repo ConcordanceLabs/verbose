@@ -9,7 +9,7 @@ This is a demo of the theme's documentation layout.
 
 
 
-``` go {filename="main.go"}
+``` Typescript {filename="Tecit.ts", linenos=table}
 package main
 
 import "fmt"
@@ -19,7 +19,7 @@ func main() {
 }
 ```
 
-``` Python
+``` Typescript {filename="Without.ts", linenos=table}
 def main():
     print("Hello, World!")
 
