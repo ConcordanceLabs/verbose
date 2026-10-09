@@ -9,7 +9,7 @@ This is a demo of the theme's documentation layout.
 
 {{< cards >}}
 
-```go {filename="main.go"}
+``` go {filename="main.go"}
 package main
 
 import "fmt"
@@ -17,5 +17,12 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
+Python
+def main():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    main()
+
 ```
 {{< /cards >}}
