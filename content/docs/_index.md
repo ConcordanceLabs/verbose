@@ -4,7 +4,8 @@ next: first-page
 ---
 
 ## Overview
-<img width="1064" height="322" alt="image" src="https://github.com/user-attachments/assets/134bb828-cbbc-4f26-bbad-3c550dcf98ca" />
+<img width="1318" height="480" alt="image" src="https://github.com/user-attachments/assets/6e705b60-3dd7-45fe-9446-136f4f54db90" />
+
 
 
 
