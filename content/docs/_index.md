@@ -16,14 +16,14 @@ next: first-page
 {{< tabs >}}
 {{< tab name="With Tetra" >}}**With Tacit**: Declarative code for error handling, timers, and listeners.  
 ``` Typescript {filename="Tecit.ts", linenos=table}
-export const waitforBuyer = () => {
+export const waitforBuyer = (mintedOptionBody) => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
 }
 
-const buyer = waitforBuyer()
+const buyer = waitForBuyer(mintedOption)
     .match(buyer)
-       .with('success', () => exerciseOption() )
-       .with('error', () => optionExpired());
+       .with('success', () => exerciseOption(mintedOption) )
+       .with('error', () => optionExpired(mintedOption));
 
 ```
 {{< /tab >}}
