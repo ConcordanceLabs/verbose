@@ -14,7 +14,7 @@ next: first-page
 
 
 {{< tabs >}}
-{{< tab name="Tacit" >}}**With Tacit**: Declarative code that handles errors and listeners.  
+{{< tab name="With Tetra" >}}**With Tacit**: Declarative code that handles errors and listeners.  
 ``` Typescript {filename="Tecit.ts", linenos=table}
 export const waitforBuyer = () => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
@@ -28,7 +28,7 @@ const buyer = waitforBuyer()
 ```
 {{< /tab >}}
 
-  {{< tab name="Without Tacit" >}}**Without Tacit**: The same single function. Lower predictability. <br> Manually configured listeners and constraints like timers. Write rejections, awaits, error handling with nested conditional statements in your try catch verbosity makes applications brittle. 
+  {{< tab name="Without Tetra" >}}**Without Tacit**: The same single function. Lower predictability. <br> Manually configured listeners and constraints like timers. Write rejections, awaits, error handling with nested conditional statements in your try catch verbosity makes applications brittle. 
 
 
 
