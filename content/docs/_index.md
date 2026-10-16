@@ -3,13 +3,7 @@ title: Documentation
 next: first-page
 ---
 
-This is a demo.
-
-
-<img width="1077" height="383" alt="image" src="https://github.com/user-attachments/assets/c47c598c-b3a9-40f9-99de-1568c4c6c565" />
-
-<img width="1303" height="368" alt="image" src="https://github.com/user-attachments/assets/94a39b54-18bd-4ec0-835e-1c43f99c47ad" />
-
+## Overview
 <img width="1064" height="322" alt="image" src="https://github.com/user-attachments/assets/134bb828-cbbc-4f26-bbad-3c550dcf98ca" />
 
 
