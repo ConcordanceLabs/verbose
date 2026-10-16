@@ -14,7 +14,7 @@ next: first-page
 
 
 {{< tabs >}}
-{{< tab name="With Tetra" >}}**With Tacit**: Declarative code that handles errors and listeners.  
+{{< tab name="With Tetra" >}}**With Tacit**: Declarative code for error handling, timers, and listeners.  
 ``` Typescript {filename="Tecit.ts", linenos=table}
 export const waitforBuyer = () => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
