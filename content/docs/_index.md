@@ -5,6 +5,11 @@ next: first-page
 
 This is a demo.
 
+
+<img width="1077" height="383" alt="image" src="https://github.com/user-attachments/assets/c47c598c-b3a9-40f9-99de-1568c4c6c565" />
+
+
+
 ## Building Applications
 
 
