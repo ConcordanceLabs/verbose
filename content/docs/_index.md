@@ -5,9 +5,9 @@ next: first-page
 
 ## Overview
 Traditional application runtimes use an asynchronous event loop as the timing belt that drives an application forward.
-Crypto has a unique application architecture, a twin-engine system, where onchain execution and state move independent of an offchain state and traditional async event loop, yet the application requires these  to work together closely to give the user an ideal experience. For this, the asyncronous 'timing belt' alone is insufficient.
+Crypto has a unique application architecture, a twin-engine system, where onchain execution and state move independent of. offchain state and the traditional async event loop, yet the application requires these systems to work together closely to give the user an ideal experience. For this, the asynchronous 'timing belt' alone is insufficient.
 
-Rather than a single loop managing the application at runtime, we need an actuator; a mechanism to coordinate the independent progression of each independent environment without coupling them together.
+Rather than a single loop managing the application at runtime, we need an actuator; a mechanism to coordinate the progression of each independent environment without coupling them together.
 
 <img width="1581" height="576" alt="image" src="https://github.com/user-attachments/assets/6e705b60-3dd7-45fe-9446-136f4f54db90" />
 
