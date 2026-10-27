@@ -19,8 +19,8 @@ Rather than a single loop managing the application at runtime, we need an actuat
 
 
 {{< tabs >}}
-{{< tab name="With Tetra" >}}**With Tacit**: Declarative code for error handling, timers, and listeners.  
-``` Typescript {filename="Tecit.ts", linenos=table}
+{{< tab name="With Atara" >}}**With Atara**: Declarative code for error handling, timers, and listeners.  
+``` Typescript {filename="tryAtara.ts", linenos=table}
 export const waitforBuyer = (mintedOptionBody) => {
   client.on('buy', (id) => buyOption(id)).timeout(15000);
 }
@@ -33,12 +33,12 @@ const buyer = waitForBuyer(mintedOption)
 ```
 {{< /tab >}}
 
-  {{< tab name="Without Tetra" >}}**Without Tacit**: The same single function. Lower predictability. <br> Manually configured listeners and constraints like timers. Write rejections, awaits, error handling with nested conditional statements in your try catch verbosity makes applications brittle. 
+  {{< tab name="Without Atara" >}}**Without Atara**: The same single function. Lower predictability. <br> Manually configured listeners and constraints like timers. Write rejections, awaits, error handling with nested conditional statements in your try catch verbosity makes applications brittle. 
 
 
 
 
-``` Typescript {filename="Without.ts", linenos=table}
+``` Typescript {filename="withoutAtara.ts", linenos=table}
 function timeout(ms: number) {
     return new Promise((_, reject) => 
         setTimeout(() => reject(new Error("BUYER_TIMEOUT")), ms)
