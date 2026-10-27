@@ -6,7 +6,7 @@ next: first-page
 ## Overview
 Traditional application runtime environments operate with a single asynchronous event loop, like a timing belt that drives an application forward.
 
-Blockchain-based applications and agent-to-agent systems has a unique application architecture, where federated environments, and their respective state move independent of other actors in the environment, yet the application requires these systems to work together closely to give the user an ideal experience. For this, a single asynchronous 'timing belt' alone is insufficient.
+Blockchain-based applications and agent-to-agent systems has a unique application architecture, where federated environments and their respective state, move independent of other actors in the system, yet must work together closely to progress the application forward, and provide the user an ideal experience. For this, a single asynchronous 'timing belt' alone is insufficient.
 
 Rather than a single loop managing the application at runtime, we need an actuator; a mechanism to coordinate the progression of each independent environment without coupling them together.
 
