@@ -1,9 +1,7 @@
 ---
-title: Concordance Tacit
+title: Concordance Atara
 toc: false
 ---
-
-This is the landing page.
 
 ## Explore
 
